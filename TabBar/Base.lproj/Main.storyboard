@@ -115,7 +115,7 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-09-syy">
                                                 <rect key="frame" x="35.5" y="0.0" width="303" height="31"/>
-                                                <color key="tintColor" red="0.89135362689999997" green="0.088584336390000004" blue="0.14254312229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="wM5-tB-XaV">
                                                 <rect key="frame" x="37.5" y="30" width="299" height="20.5"/>
@@ -234,8 +234,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEf-eR-g42">
                                                 <rect key="frame" x="282" y="11.5" width="51" height="31"/>
                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                                <color key="onTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -251,8 +250,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dd3-gL-Q59">
                                                 <rect key="frame" x="282" y="11.5" width="51" height="31"/>
                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                                <color key="onTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -268,8 +266,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHQ-qV-8eP">
                                                 <rect key="frame" x="282" y="11.5" width="51" height="31"/>
                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                                <color key="onTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -285,8 +282,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFJ-pm-byA">
                                                 <rect key="frame" x="282" y="11.5" width="51" height="31"/>
                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                                <color key="onTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -325,7 +321,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.41912864789999998" blue="0.38645423089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AWN-dk-h6R" firstAttribute="top" secondItem="fQN-Bc-tmR" secondAttribute="bottom" id="0aF-eN-cJk"/>
                             <constraint firstItem="SP7-iF-3za" firstAttribute="height" secondItem="COM-2c-mGV" secondAttribute="height" multiplier="0.3" id="1O3-RF-70Q"/>
@@ -390,16 +386,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w6m-7U-dVd">
-                                <rect key="frame" x="0.0" y="448" width="414" height="54"/>
+                                <rect key="frame" x="62" y="448" width="290" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqc-23-19p">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="34.5"/>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEX-jC-QUp">
-                                        <rect key="frame" x="0.0" y="34.5" width="414" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="34.5" width="290" height="19.5"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -409,9 +405,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.57554527330000005" green="0.75105781130000004" blue="0.98637872410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xsp-2V-fAj" firstAttribute="trailing" secondItem="w6m-7U-dVd" secondAttribute="trailing" id="2ze-UF-XQE"/>
                             <constraint firstItem="w6m-7U-dVd" firstAttribute="centerY" secondItem="Xsp-2V-fAj" secondAttribute="centerY" id="4BZ-Ji-aff"/>
-                            <constraint firstItem="w6m-7U-dVd" firstAttribute="leading" secondItem="Xsp-2V-fAj" secondAttribute="leading" id="R5c-KT-KYp"/>
+                            <constraint firstItem="w6m-7U-dVd" firstAttribute="width" secondItem="c1B-fd-VGb" secondAttribute="width" multiplier="0.7" id="5mx-6b-Vo7"/>
                             <constraint firstItem="w6m-7U-dVd" firstAttribute="centerX" secondItem="Xsp-2V-fAj" secondAttribute="centerX" id="iWN-jc-Ih4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xsp-2V-fAj"/>
@@ -431,7 +426,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFb-vr-999" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="VjT-YY-SrA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3236.2318840579715" y="278.57142857142856"/>
+            <point key="canvasLocation" x="2380" y="279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hUl-y4-ss7">
