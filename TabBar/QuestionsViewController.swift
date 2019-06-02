@@ -17,6 +17,7 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var horizontalSlider: UISlider!
     @IBOutlet weak var sliderLabel1: UILabel!
     @IBOutlet weak var sliderLabel2: UILabel!
+    @IBOutlet weak var sliderValidateButton: UIButton!
     
     
     @IBOutlet weak var simpleView: UIStackView!
@@ -35,38 +36,24 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var switch3: UISwitch!
     @IBOutlet weak var switchLabel4: UILabel!
     @IBOutlet weak var switch4: UISwitch!
+    @IBOutlet weak var multipleValidateButton: UIButton!
     
     
-    let questions : [Question] = [
-        Question(text: "Quel nourriture aimes-tu le plus ?",
-                 type: .single,
-                 answers: [
-                    Answer(text: "Steak", type: .dog),
-                    Answer(text: "Fish", type: .cat),
-                    Answer(text: "Carrots", type: .rabbit),
-                    Answer(text: "Corn", type: .turtle)]),
-        Question(text: "Quel activités aimes-tu ?",
-                 type: .multiple,
-                 answers: [
-                    Answer(text: "Swimming", type: .turtle),
-                    Answer(text: "Sleeping", type: .cat),
-                    Answer(text: "Cuddling", type: .rabbit),
-                    Answer(text: "Eating", type: .dog)]),
-        Question(text: "How much do you enjoy car rides?",
-                 type: .slider,
-                 answers: [
-                    Answer(text: "I dislike them", type: .cat),
-                    Answer(text: "I get a little nervous",
-                           type: .rabbit),
-                    Answer(text: "I barely notice them",
-                           type: .turtle),
-                    Answer(text: "I love them", type: .dog)])]
+    let questions = questionsStub
     
     var questionIndex = 0
     var answersChosen : [Answer] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        simpleButton1.layer.cornerRadius = 10
+        simpleButton2.layer.cornerRadius = 10
+        simpleButton3.layer.cornerRadius = 10
+        simpleButton4.layer.cornerRadius = 10
+        sliderValidateButton.layer.cornerRadius = 10
+        multipleValidateButton.layer.cornerRadius = 10
+        
         updateUI()
     }
     

@@ -19,13 +19,13 @@ enum AnimalType: Character{
     var definition: String{
         switch self {
         case .dog:
-            return "You are incredibly outgoing. You surround yourself with the people you love and enjoy activities with your friends."
+            return "Tu es incroyablement amical. Tu t'entoures des gens que tu aimes et tu adores faire des activités avec eux. 😜"
         case .cat:
-            return "Mischievous, yet mild-tempered, you enjoy doing things on your own terms."
+            return "Espiègle, mais tempéré, tu aimes faire des activités avec tes propres règles. 😼"
         case .rabbit:
-            return "You love everything that's soft. You are healthy and full of energy."
+            return "Tu aimes tout ce qui est doux. Tu es en pleine forme et énérgique. ✊"
         case .turtle:
-            return "You are wise beyond your years, and you focus on the details. Slow and steady wins the race."
+            return "Tu es quelqu'un de sage et tu te concentres sur les détails. Lentement mais surement. 🙏"
         }
     }
 }

@@ -80,6 +80,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5jt-VD-Vql"/>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="1fI-7O-6IR" id="t5g-Gm-7eO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnx-dB-vi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Bc-tmR">
-                                <rect key="frame" x="0.0" y="140" width="414" height="358.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="358.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-fB-L7S">
                                         <rect key="frame" x="158" y="0.0" width="98" height="358.5"/>
@@ -105,13 +108,14 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SP7-iF-3za">
-                                <rect key="frame" x="0.0" y="498.5" width="414" height="268.5"/>
+                                <rect key="frame" x="0.0" y="446.5" width="414" height="268.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QKC-G4-NFH">
-                                        <rect key="frame" x="20" y="91" width="374" height="86.5"/>
+                                        <rect key="frame" x="20" y="92" width="374" height="84.5"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-09-syy">
                                                 <rect key="frame" x="35.5" y="0.0" width="303" height="31"/>
+                                                <color key="tintColor" red="0.89135362689999997" green="0.088584336390000004" blue="0.14254312229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="wM5-tB-XaV">
                                                 <rect key="frame" x="37.5" y="30" width="299" height="20.5"/>
@@ -131,9 +135,13 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3w-TP-wUO">
-                                                <rect key="frame" x="157" y="50.5" width="60" height="36"/>
+                                                <rect key="frame" x="147" y="50.5" width="80" height="34"/>
+                                                <color key="backgroundColor" red="0.90678537436548223" green="0.90678537436548223" blue="0.90678537436548223" alpha="0.39613655821917809" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Valider"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                <state key="normal" title="Valider">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="sliderValidatedButtonPressed:" destination="NLQ-rx-OH4" eventType="touchUpInside" id="fwf-Fq-VQh"/>
                                                 </connections>
@@ -152,37 +160,67 @@
                                     <constraint firstAttribute="trailing" secondItem="QKC-G4-NFH" secondAttribute="trailing" constant="20" id="l9I-6Y-zkv"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="ButtonStackView" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hg6-cL-LI2">
-                                <rect key="frame" x="0.0" y="498.5" width="414" height="216.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="ButtonStackView" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hg6-cL-LI2">
+                                <rect key="frame" x="0.0" y="446.5" width="414" height="268.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-Vd-GP4">
-                                        <rect key="frame" x="192" y="0.0" width="30" height="54"/>
+                                        <rect key="frame" x="62" y="0.0" width="290" height="44.5"/>
+                                        <color key="backgroundColor" red="0.90678537439999995" green="0.90678537439999995" blue="0.90678537439999995" alpha="0.39613655819999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="simpleValidatedButtonPressed:" destination="NLQ-rx-OH4" eventType="touchUpInside" id="zGQ-5G-zYp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efT-Wu-Axy">
-                                        <rect key="frame" x="192" y="54" width="30" height="54"/>
+                                        <rect key="frame" x="62" y="74.5" width="290" height="45"/>
+                                        <color key="backgroundColor" red="0.90678537439999995" green="0.90678537439999995" blue="0.90678537439999995" alpha="0.39613655819999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="simpleValidatedButtonPressed:" destination="NLQ-rx-OH4" eventType="touchUpInside" id="scZ-ox-mpV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDE-14-xW4">
-                                        <rect key="frame" x="192" y="108" width="30" height="54.5"/>
+                                        <rect key="frame" x="62" y="149.5" width="290" height="44.5"/>
+                                        <color key="backgroundColor" red="0.90678537439999995" green="0.90678537439999995" blue="0.90678537439999995" alpha="0.39613655819999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="simpleValidatedButtonPressed:" destination="NLQ-rx-OH4" eventType="touchUpInside" id="x27-cG-cTI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yey-id-rrv">
-                                        <rect key="frame" x="192" y="162.5" width="30" height="54"/>
+                                        <rect key="frame" x="62" y="224" width="290" height="44.5"/>
+                                        <color key="backgroundColor" red="0.90678537439999995" green="0.90678537439999995" blue="0.90678537439999995" alpha="0.39613655819999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="simpleValidatedButtonPressed:" destination="NLQ-rx-OH4" eventType="touchUpInside" id="5tT-Eo-mH3"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="KDE-14-xW4" firstAttribute="width" secondItem="hg6-cL-LI2" secondAttribute="width" multiplier="0.7" id="3pY-NU-GCt"/>
+                                    <constraint firstItem="Yey-id-rrv" firstAttribute="width" secondItem="hg6-cL-LI2" secondAttribute="width" multiplier="0.7" id="FBZ-L4-9oM"/>
+                                    <constraint firstItem="efT-Wu-Axy" firstAttribute="width" secondItem="hg6-cL-LI2" secondAttribute="width" multiplier="0.7" id="GBl-D7-C1r"/>
+                                    <constraint firstItem="MSW-Vd-GP4" firstAttribute="width" secondItem="hg6-cL-LI2" secondAttribute="width" multiplier="0.7" id="kgS-st-QFg"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" restorationIdentifier="SwitchStackView" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AWN-dk-h6R">
-                                <rect key="frame" x="0.0" y="498.5" width="414" height="268.5"/>
+                                <rect key="frame" x="0.0" y="446.5" width="414" height="268.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iKH-P9-4zS">
                                         <rect key="frame" x="41.5" y="0.0" width="331" height="53.5"/>
@@ -253,9 +291,13 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="232-s7-dgk">
-                                        <rect key="frame" x="177" y="215" width="60" height="53.5"/>
+                                        <rect key="frame" x="167" y="215" width="80" height="53.5"/>
+                                        <color key="backgroundColor" red="0.90678537439999995" green="0.90678537439999995" blue="0.90678537439999995" alpha="0.39613655819999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Valider"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                        <state key="normal" title="Valider">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="switchValidatedButtonPressed:" destination="NLQ-rx-OH4" eventType="touchUpInside" id="y1p-qm-b8W"/>
                                         </connections>
@@ -269,14 +311,16 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXY-uE-Fok">
-                                <rect key="frame" x="0.0" y="767" width="414" height="129"/>
+                                <rect key="frame" x="0.0" y="715" width="414" height="181"/>
                                 <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="47y-xh-S0c">
-                                        <rect key="frame" x="20" y="63.5" width="374" height="2"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="47y-xh-S0c">
+                                        <rect key="frame" x="50" y="89.5" width="314" height="2"/>
                                     </progressView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="47y-xh-S0c" firstAttribute="centerY" secondItem="RXY-uE-Fok" secondAttribute="centerY" id="B2V-c7-cKg"/>
+                                    <constraint firstAttribute="trailing" secondItem="47y-xh-S0c" secondAttribute="trailing" constant="50" id="HTl-gM-KID"/>
+                                    <constraint firstItem="47y-xh-S0c" firstAttribute="leading" secondItem="RXY-uE-Fok" secondAttribute="leading" constant="50" id="xNC-Rs-qIR"/>
                                     <constraint firstItem="47y-xh-S0c" firstAttribute="centerX" secondItem="RXY-uE-Fok" secondAttribute="centerX" id="xRk-if-wGV"/>
                                 </constraints>
                             </view>
@@ -300,7 +344,7 @@
                             <constraint firstItem="RXY-uE-Fok" firstAttribute="leading" secondItem="EMh-Ke-adN" secondAttribute="leading" id="caQ-d2-kHZ"/>
                             <constraint firstItem="RXY-uE-Fok" firstAttribute="top" secondItem="SP7-iF-3za" secondAttribute="bottom" id="g8I-k2-enC"/>
                             <constraint firstAttribute="bottom" secondItem="RXY-uE-Fok" secondAttribute="bottom" id="h3l-ZW-EFf"/>
-                            <constraint firstItem="hg6-cL-LI2" firstAttribute="height" secondItem="EMh-Ke-adN" secondAttribute="height" multiplier="0.3" id="qh3-nA-zoH"/>
+                            <constraint firstItem="RXY-uE-Fok" firstAttribute="top" secondItem="hg6-cL-LI2" secondAttribute="bottom" id="mQB-tp-oxC"/>
                             <constraint firstItem="EMh-Ke-adN" firstAttribute="trailing" secondItem="SP7-iF-3za" secondAttribute="trailing" id="r69-Le-D4H"/>
                             <constraint firstItem="hg6-cL-LI2" firstAttribute="top" secondItem="fQN-Bc-tmR" secondAttribute="bottom" id="vBA-eT-Pi0"/>
                         </constraints>
@@ -309,6 +353,7 @@
                     <navigationItem key="navigationItem" id="A8I-91-fQd"/>
                     <connections>
                         <outlet property="horizontalSlider" destination="PFG-09-syy" id="Xf9-ba-7XN"/>
+                        <outlet property="multipleValidateButton" destination="232-s7-dgk" id="MT3-ji-bnL"/>
                         <outlet property="multipleView" destination="AWN-dk-h6R" id="aD4-ef-7ZY"/>
                         <outlet property="progressBar" destination="47y-xh-S0c" id="9Vk-Qk-shu"/>
                         <outlet property="questionLabel" destination="MuS-fB-L7S" id="7bk-cG-Qzg"/>
@@ -319,6 +364,7 @@
                         <outlet property="simpleView" destination="hg6-cL-LI2" id="h90-yI-4tq"/>
                         <outlet property="sliderLabel1" destination="dVT-cs-gZH" id="etM-Mu-LzO"/>
                         <outlet property="sliderLabel2" destination="sFg-y8-ZvX" id="ppe-Bp-br2"/>
+                        <outlet property="sliderValidateButton" destination="X3w-TP-wUO" id="coA-Ki-Fzr"/>
                         <outlet property="sliderView" destination="SP7-iF-3za" id="oGA-1s-mif"/>
                         <outlet property="switch1" destination="KEf-eR-g42" id="u0V-Y4-aPp"/>
                         <outlet property="switch2" destination="dd3-gL-Q59" id="8AS-0n-mv6"/>
@@ -328,7 +374,7 @@
                         <outlet property="switchLabel2" destination="RpB-yt-5zx" id="EVD-8R-Gmb"/>
                         <outlet property="switchLabel3" destination="qwo-Gp-jHh" id="nm3-0g-O7V"/>
                         <outlet property="switchLabel4" destination="Chc-W7-HmA" id="esb-VN-Qy0"/>
-                        <segue destination="nlJ-5B-Qci" kind="show" identifier="ShowResult" id="GwA-Ho-5xt"/>
+                        <segue destination="nlJ-5B-Qci" kind="show" identifier="ShowResult" id="7cc-A2-LtW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIQ-dV-ZNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -344,7 +390,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w6m-7U-dVd">
-                                <rect key="frame" x="0.0" y="474" width="414" height="54"/>
+                                <rect key="frame" x="0.0" y="448" width="414" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqc-23-19p">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
@@ -373,7 +419,7 @@
                     <navigationItem key="navigationItem" title="Résultat" id="gCW-gc-6CL">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="0ZL-du-Ft6">
                             <connections>
-                                <segue destination="VjT-YY-SrA" kind="unwind" unwindAction="unwindToIntroductionWithSegue:" id="NwZ-UK-cTL"/>
+                                <segue destination="VjT-YY-SrA" kind="unwind" unwindAction="unwindToIntroductionWithSegue:" id="20N-hU-trb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -385,15 +431,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CFb-vr-999" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="VjT-YY-SrA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2326.0869565217395" y="278.57142857142856"/>
+            <point key="canvasLocation" x="3236.2318840579715" y="278.57142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hUl-y4-ss7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekG-DF-dyi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="mzk-0m-sHW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mzk-0m-sHW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

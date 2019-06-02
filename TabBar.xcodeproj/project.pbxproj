@@ -18,6 +18,7 @@
 		17216ED122A3087A005B3DF2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17216ED022A3087A005B3DF2 /* ResultViewController.swift */; };
 		17216ED422A30BB3005B3DF2 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17216ED322A30BB3005B3DF2 /* Question.swift */; };
 		17216ED622A30C66005B3DF2 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17216ED522A30C66005B3DF2 /* Answer.swift */; };
+		178B0F5A22A3BF4600CFE869 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178B0F5922A3BF4600CFE869 /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		17216ED022A3087A005B3DF2 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		17216ED322A30BB3005B3DF2 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		17216ED522A30C66005B3DF2 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		178B0F5922A3BF4600CFE869 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		17216E9222A26A4A005B3DF2 = {
 			isa = PBXGroup;
 			children = (
+				178B0F5822A3BF3000CFE869 /* TabBarStub */,
 				17216ED222A30B8F005B3DF2 /* TabBarModel */,
 				17216E9D22A26A4A005B3DF2 /* TabBar */,
 				17216EB222A26A4C005B3DF2 /* TabBarTests */,
@@ -143,6 +146,14 @@
 				17216ED522A30C66005B3DF2 /* Answer.swift */,
 			);
 			path = TabBarModel;
+			sourceTree = "<group>";
+		};
+		178B0F5822A3BF3000CFE869 /* TabBarStub */ = {
+			isa = PBXGroup;
+			children = (
+				178B0F5922A3BF4600CFE869 /* Questions.swift */,
+			);
+			path = TabBarStub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				17216ED422A30BB3005B3DF2 /* Question.swift in Sources */,
 				17216ECD22A3080D005B3DF2 /* IntroductionViewController.swift in Sources */,
 				17216E9F22A26A4A005B3DF2 /* AppDelegate.swift in Sources */,
+				178B0F5A22A3BF4600CFE869 /* Questions.swift in Sources */,
 				17216ED622A30C66005B3DF2 /* Answer.swift in Sources */,
 				17216ECF22A30848005B3DF2 /* QuestionsViewController.swift in Sources */,
 				17216ED122A3087A005B3DF2 /* ResultViewController.swift in Sources */,
